@@ -1,0 +1,55 @@
+*{
+    background-color: hsl(hue, saturation, lightness);
+}
+
+h1{
+    color: goldenrod;
+    text-align: center;
+}
+
+.caja{
+    padding: 10px;
+    color: white;
+    width: 22%;
+    text-align: center;
+    margin: 5px 2px;
+    font-size: 12px;
+    float: left;
+    /* para que cada div se vaya acomodando verticalmente */
+}
+
+.rojo{
+    background-color: crimson;
+}
+
+.verde{
+    background-color: olivedrab;
+}
+
+.azul{
+    background-color: rgb(49, 124, 209);
+}
+
+.rgb{
+    background-color: rgb(119, 37, 196);
+}
+.rgba{
+    background-color: rgba(48, 33, 180, 0.596);
+}
+
+.hexa1{
+    background-color: #a52a2a;
+}
+
+.hexa2{
+    background-color: #000080ad;
+}
+
+.hsl{
+    background-color: hsl(59, 75%, 34%);
+}
+
+.hsla{
+    background-color: hsla(51, 100%, 50%, 0.63);
+}
+/* hsl alpha -> transparencia */
