@@ -1,0 +1,21 @@
+h1{
+    text-align:left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(214, 68, 141);
+    text-shadow: #1f1a1a 0 -1px;
+}
+
+legend{
+    text-align:left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(255, 31, 143);
+    text-shadow: #1f1a1a 0 -1px;
+    background-color: white;
+}
+
+
+fieldset{
+    border: 1px solid rgb(255, 17, 0);
+    padding: none;
+    background-color: rgb(211, 157, 255);
+}

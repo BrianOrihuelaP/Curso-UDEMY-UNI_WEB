@@ -1,0 +1,88 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #e6394e;
+}
+
+h2 {
+    text-align: center;
+    border: 8px double skyblue;
+}
+
+div .box {
+    padding: 10px 20px 30px;
+    border: 5px solid royalblue;
+    margin: 20px;
+    width: 300px;
+    /* outline: 10px solid #a8dadc; */
+}
+
+h3 {
+    color: crimson;
+    text-align: center;
+}
+
+.box {
+    border: 4px solid blue;
+}
+
+.box p {
+    box-sizing: border-box;
+    /* el box sizing acomoda la caja de manera que no sobresalga el tamaño del padre */
+    border: solid red 10px;
+    padding: 10px;
+    max-width: 80%;
+}
+
+.double {
+    padding: 5px;
+    border: 6px solid royalblue;
+    margin: 40px 20px;
+    background-color: #f1faee;
+    width: 300px;
+    outline: 10px ridge rgb(200, 223, 155);
+    /* outline se pone encima de los demas elementos */
+}
+
+.offset {
+    outline: 6px solid blue;
+    outline-offset: 10px;
+    /* hace una separacion entre el borde y el outline  */
+    /* no se puede aplicar sobre izq, der, arriva y aajo, solo es una valor para todos */
+}
+
+/* Max,Min Width */
+
+.boxMax {
+    padding: 10px 15px;
+    border: solid red;
+    max-width: 700px;
+    min-width: 200px;
+    margin-left: 100px;
+    /* margin: auto para centrar cajas */
+    /* margin: 0 auto -> centra horizontal y no verticalmente */
+}
+
+p.interno {
+    margin-left: inherit;
+    /* esta propiedad hereda a la del contenedor padre */
+}
+
+/* margin collapse */
+
+.collapse1{
+    padding: 10px 15px;
+    border: solid red;
+    box-sizing: border-box;
+    margin: 30px;
+}
+
+.collapse2{
+    padding: 10px 15px;
+    border: solid red;
+    box-sizing: border-box;
+    margin: 20px;
+}

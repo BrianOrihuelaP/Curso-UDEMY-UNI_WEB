@@ -1,0 +1,33 @@
+ol {
+     list-style: none;
+     /*Para quitar el formato de la lista */
+     counter-reset: contador;
+     /*Counter-reset sirve para resetar el contador en las listas, para que cada que creemos una lista nueva
+     que esta variable se resetee*/
+}
+
+ol li {
+     counter-increment: contador;
+     /*Como ya se ha creado la variable contador, aqui se incrementa*/
+}
+
+ol li::before {
+     /*::before es una selector, indica que antes del elemento que se encuentra en ol en los elementos li
+     se agregara lo que le indiquemos en el contenido*/
+     content: 'Curso ' counter(contador) '.- ';
+     /*Se usa la variable y se muestra concatenada*/
+     color: #ff0000;
+}
+
+ol li::after {
+     /*Hace lo mismo que ::before pero encadenando al final*/
+     content: '.';
+}
+
+h1 {
+     text-transform: uppercase;
+     /* Letras mayusculas */
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+          Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     color: cadetblue;
+}

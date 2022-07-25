@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios HTML5</title>
+    <link rel="stylesheet" href="/Leccion7/Formularios/css/estilos.css">
+</head>
+<body>
+    <h1>Formas en HTML</h1>
+    <!---Para ocupar formularios se usa la etiqueta form-->
+    <!--Si no queremos validar para nada el formulario, se hace uso del atributo no validate en las etiquetas de form
+    Example:
+    <form novalidate>
+    </form>
+    -->
+    <!-- El atributo accion nos sirve para indicarle a donde se va a mandar la info de la forma & el atributo TARGET 
+        funciona al igual que los links-->
+    <form action="mi_servidor" target="_blank" autocomplete="off">
+         <!--Metodo GET & POST; 
+                El metodo get manda informacion por medio del http este modo es el default, esta informacion es visible.
+                El metodo post es mas seguro dado que oculta la información y no la muestra en el http-->
+        <!--FIELDSET--------------------------------------------------------------------------------------------->
+        <!----El fieldset sirve para encerrar todo el formulario de modo que este tenga un marco y parezca más 
+                intuitivo para el usuario------------------------------------------------------------------------->
+        <fieldset>
+            <legend>Vote DJMAG 2021</legend>
+            <!--La etiqueta LEGEND nos ayuda a darle un nombre a la forma-->
+            <!-- 
+            El siguiente input text de persona nos sirve para llevar un mejor registro del conteo de personas
+            en el momento esto no tiene tanta relevancia hasta no saber JS, este dato no se puede modificar 
+            en el front end  -->
+            <label for="idPersona">Numero de Persona:</label><br/>
+            <input type="text" id="idPersona" name="idPersona"
+            placeholder="100" readonly="true" disabled="true"><br/>
+            <!-- Si nosotros desabilitamos un input como se muestra, este dejara de enviar la info al server -->
+            <!-- Este input hidden es un dato oculto, como aqui  le decimos a la forma que es un 
+                "sistema administrativo de personas", podemos agregar cualquier valor que nos ayude 
+                y que no lo vea el usuario -->
+            <input type="hidden" id="sistema" name="sistema" value="SAP">
+            <label for="Nombre">Nombre:</label><br/>
+            <input type="text" id="Nombre" name="Nombre" value="Brian Ulises"
+            placeholder="Escribe tu nombre" required="true"><br/>
+            <!--La etiqueta Label nos sirve para darle una instruccion al usuario de lo que debe llenar en el input--->
+            <!---El input es el elemento que envuelve (lee) los datos de entrada-->
+            <!--Si queremos colocar info por default en los input, se utiliza el atributo value="+++"--->
+            <!--PLACEHORDER--------------------------------------------------------------
+            Esta etiqueta es para poner una leyenda o instrucción dentro del input box-->
+            <label for="Apellido">Apellido:</label><br/>
+            <input type="text" id="Apellido" name="Apellido" value="Orihuela Perez" 
+            placeholder="Escribe tu apellido" required="true"></br>
+            <!--Es importante utilizar el attrib name dado que se utiliza al enviar info; el nombre id==name -->
+            <label for="Edad">Edad:</label><br/>
+            <input type="number" id="Edad" name="Edad" 
+            placeholder="Edad" required="true"></br><br>
+            <!--Para que el input acepte decimales, signo menos etc,se ocupa la propiedad step:
+            <input type="number" id="Edad" name="Edad" 
+            placeholder="Edad" required="true" step="any"></br>-->
+            <label>Género:</label><br>
+            <input type="radio" id="femenino" name="Choice" value="Femenino">
+            <label for="femenino">Femenino</label><br>
+            <input type="radio" id="masculino" name="Choice" value="Masculino">
+            <label for="masculino">Masculino</label><br>
+            <input type="radio" id="noBinario" name="Choice" value="no Binario">
+            <label for="masculino">No Binario</label><br>
+            <br>
+            <!--El label se enlaza mediante el id mientras que el envio de datos se hace por el name y el value-->
+            <label for="">Dj/producer Favorito</label><br>
+            <input type="checkbox" id="PVD" name="Music" value="Paul Van Dyk">
+            <label for="PVD">Paul Van Dyk</label><br/>
+            <input type="checkbox" id="Tiesto" name="Music" value="Tiesto">
+            <label for="Tiesto">Ti&iocy;sto</label><br>
+            <input type="checkbox" id="AVB" name="Music" value="Armin Van Buuren">
+            <label for="AVB">Armin Van Buuren</label><br/>
+            <!---La diferencia de checkbox a radio es que en RADIO se suele seleccionar solo una opción, en cambio en 
+                los CHECKBOX se seleccionan varias opciones-->
+            </br>
+            <!---Elementos SELECT--------------------------------------------------------------------->
+            <label for="Headphones">Marca de Audifonos favorita</label><br/>
+            <select name="Headphones" id="Headphones">
+                <!--El atributo multiple nos permite seleccionar más de una opción
+                Example:
+                <select name="Headphones" id="Headphones" multiple="true">-->
+                <option value="Pioneer">Pioneer</option>
+                <option value="Sony">Sony</option>
+                <option value="Beats">Beats By DR. Dre</option>
+                <option value="Skull Candy">Skull Candy</option>
+            </select><br><br>
+            <!---Elementos TextArea---------------------------------------------------------------------->
+            <label for="Comentario">Comentarios</label><br>
+            <textarea name="Comentario" id="Comentario" cols="30" rows="2">This is my comentary.
+            </textarea><br><br>
+            <!-- El textarea sirve para poner algún comentario -->
+            <label for="email">Email:</label><br/>
+            <input type="email" id="email" name="email"
+            placeholder="Escribe el email" required="false"><br/>
+            <label for="Password">Contraseña:</label><br/>
+            <input type="password" id="Password" name="Apellido" 
+            placeholder="Escribe tu contraseña" required="true"><br/>
+            <input type="submit" value="Enviar"><br/>
+            <input type="reset" value="Limpiar">
+        </fieldset>
+    </form>
+</body>
+</html>

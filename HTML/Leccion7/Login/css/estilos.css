@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+html{
+    height:100%;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(#7209b7, #3f37c0); /* Aqui se hace un difuminado del color de la pagina */
+}
+
+label{
+    text-transform: uppercase;/* Letras mayusculas */
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+.contenedor{ 
+    margin: 100px auto;
+    width:  400px ;
+    padding: 30px;
+    background: rgba(24, 63, 148, 0.5);
+    border-radius: 5px;
+}
+
+h2{
+    text-align: center;
+}
+
+.contenedor h2{
+    margin: 0 0 30px;
+    padding: 0;
+    font-size: 30px;
+    color: #4cc9f0;
+    text-align: center;
+    text-shadow:2px 2px #5f4444 ;
+}
+
+.contenedor .elemento label{
+    color: white;
+}
+
+.contenedor .elemento input{
+    width: 100%;
+    padding: 10px 0;
+    color: white;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid oldlace;
+    margin-bottom: 30px;
+}
+
+.contenedor .elemento input[type="submit"]{
+    text-align: center;
+    background-color: #25f7b8;
+    border: none;
+    color: white;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.contenedor .elemento input[type="submit"]:hover{
+    background-color: #033d27;
+    color: white;
+}

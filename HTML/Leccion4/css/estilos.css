@@ -1,0 +1,71 @@
+table,
+th,
+td {
+  border: 1px solid black;
+  /* border-collapse: collapse; PARA QUITAR EL ESPACIO EN EL BORDE */
+  padding: 5px;
+  
+  /* border-spacing: 5px;   PARA PONER ESPACIO EN EL BORDE */
+}
+
+table {
+  width: 100%;
+  border-radius: 20px;
+  background-color: #c084845d;
+  box-shadow: 4px 10px 7px black;
+}
+
+caption {
+  color: #e6398a;
+  font-family: "Trocchi", serif;
+  font-size: 45px;
+  line-height: 70px; /*Para modificar el espacio top y bottom*/
+}
+
+td {
+  text-align: center;
+}
+
+th {
+  text-align: center;
+  color: #d6d6d6;
+  background-color: #571313;
+}
+
+tr:nth-child(even){
+    background-color: #e9809a;
+}
+
+tr:nth-child(odd){
+    background-color: #d6acac;
+}
+
+/* tr es para los renglones = table row (renglones de tabla)*/
+/* :nth-child() es una funcion que sirve para seleccionar los renglones pares o impares con los que se trabajara*/
+/* dentro del parentesis podemos seleccionar even (pares) o odd (impares)*/
+
+.sony {
+  font-size: larger;
+  border-radius: 4px;
+  /* margin-right: 70%; */
+  border: 2px solid rgb(104, 29, 29);
+  text-align: center;
+}
+
+.sony a{
+  text-decoration: none;
+}
+
+.sony:hover{
+  background-color: rgb(95, 162, 201);
+  color: whitesmoke;
+}
+
+.sony a:hover{
+  color: whitesmoke;
+}
+
+img {
+  width: 180px;
+  border-radius: 6px;
+}

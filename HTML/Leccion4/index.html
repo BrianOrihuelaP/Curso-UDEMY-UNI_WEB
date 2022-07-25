@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tablas en HTML</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Trocchi&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <table>
+      <!--La etiqueta table hace referencia a que se creara una tabla-->
+
+      <caption>   <!-- Etiqueta caption para dar nombre a la tabla -->
+        People List
+      </caption>
+
+      <tr>
+        <!--La etiqueta table row hace referencia a que se llenara la tabla (fila)-->
+        <!-- en este caso es fila 0 la cual se llenara los campos de las columnas -->
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Correo</th>
+        <!--
+                <th colspan="2">Nombre</th>     -La etiqueta table head hace referencia a que se creara un encabezado-->
+        <!--Atributo colspan sirve para indicar el numero de celdas a ocupar (2 celdas a ocupar)-->
+      </tr>
+
+      <tr> <!-- Nueva fila "table row"-->
+        <td>Gerardo</td>
+        <!--La etiqueta table data hace referencia a que se llenaran casillas-->
+        <td>Perez</td>
+        <td>Gera001@alumno.uaemex.mx</td>
+        <!--
+            <td rowspan="2">juan001@alumno.uaemex.mx</td>
+            Atributo rowspan sirve para indicar el numero de renglones a ocupar-->
+      </tr>
+
+      <tr>
+        <td>Maria</td>
+        <!--La etiqueta table data hace referencia a que se llenaran casillas-->
+        <td>Perez</td>
+        <td>Maria002@alumno.uaemex.mx</td>
+      </tr>
+
+      <tr>
+        <td>Brian</td>
+        <td>Perez</td>
+        <td>borihuelap002@alumno.uaemex.mx</td>
+      </tr>
+
+      <tr>
+        <td>Axel</td>
+        <td>Perez</td>
+        <td>Yaret13@alumno.uaemex.mx</td>
+      </tr>
+    </table>
+
+    <h1 class="sony"><a href="games.html" >Sony Games</a></h1>
+    <h1 class="sony"><a href="gamesJS.html" >Sony Games, JS DYNAMIC</a></h1>
+  </body>
+</html>

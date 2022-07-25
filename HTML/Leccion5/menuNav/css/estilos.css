@@ -1,0 +1,38 @@
+h1{
+    color: #1d3557;
+}
+
+ul{
+    list-style-type: none; 
+    /*Para quitar la animación a la lista*/
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,109,1) 35%, rgba(0,212,255,1) 100%);
+    overflow: hidden;
+    /*CSS overflow especifica: si recortar contenido, 
+    dibujar barras de desplazamiento o mostrar el contenido excedente en un elemento a nivel de bloque.*/
+    /*En este caso se muestra el contenido independientemente sin afectar a los demás elementos*/
+    margin: 10;
+    padding: 10;
+    /*Se anula el margin y el padding para que quedé lo más pegado a la cabecera y así no exista ningun problema a futuro*/
+}
+
+li{
+    float: left; 
+    /*Float CSS ubica un elemento al lado izquierdo o derecho de su contenedor, 
+    permitiendo a los elementos de texto y en línea aparecer a su costado.*/
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: #1d3557;
+    color: #00d4ff;
+    text-shadow: #ffffff 0 -2px;
+}
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atributo Class HTML5</title>
+    <link rel="stylesheet" href="/Leccion6/ClassMarker/css/estilos copy.css" />
+  </head>
+  <body>
+    <!---Menu Navegación--> 
+
+    <!--Bookmarks (Marcadores)-->
+    <!--Las etiquetas id tambien nos sirven para crear marcadores para redirigirnos a una seccion del programa;
+    Para hacernos una idea, estos funcionan como las etiqueta goto en un programa en C.
+    Con ayuda del id, podemos mandar a llamar esa sección del HTML con una ancla y el atributo href como se muestra-->
+
+    <ul>
+      <li id="TituloNav"><b>HISTORIA</b></li>
+      <li><a href="#Java">Java</a></li>
+      <li><a href="#Python">Python</a></li>
+      <li><a href="#JS">JavaScript</a></li>
+      <li><a href="#C">C</a></li>
+      <li><a href="#CPP">C++</a></li>
+      <li><a href="#CSH">C#</a></li>
+      <!--Para hacer que el contenido se muestre correctamente con el margen al inicio entonces...-->
+      <!--Se debe de agregar el id en el inicio del elemento del margen, en este caso se hace en el elemento div:-->
+    </ul>
+
+    <h1 id="titulo-principal">Lenguajes de Programación</h1>
+    <!--Atributo ID -->
+    <!--El atributo id especifica una identificación única para un elemento HTML. 
+    El valor del atributo id debe ser único dentro del documento HTML. 
+    El atributo id se utiliza para señalar una declaración de estilo específica en una hoja de estilo. -->
+    <div class="tarjeta" id="Java">
+      <h2 >Java</h2>
+      <p><span class="titulo2">Creador:</span> James Gosling</p>
+    </div>
+    <!--Atributo Class -->
+    <!--El atributo class se usa a menudo para señalar un nombre de clase en una hoja de estilo y así
+        no afectar a todos los elementos que contengan las mismas propiedades (H1, H2, P, ETC). 
+        También puede ser utilizado por un JavaScript para acceder y manipular elementos con el nombre de clase específico. -->
+    <div class="tarjeta" id="Python">
+      <h2 >Python</h2>
+      <p><span class="titulo2">Creador:</span> Guido Van Rossum</p>
+    </div>
+
+    <div class="tarjeta" id="JS">
+      <h2>JavaScript</h2>
+      <p><span class="titulo2">Creador:</span> Brendan Eich</p>
+    </div>
+
+    <div class="tarjeta" id="C">
+      <h2>C</h2>
+      <p><span class="titulo2">Creador:</span> Dennis Ritchie</p>
+    </div>
+
+    <div class="tarjeta" id="CPP">
+      <h2>C++</h2>
+      <p><span class="titulo2">Creador:</span> Bjarne Stroustrup</p>
+    </div>
+
+    <div class="tarjeta" id="CSH">
+      <h2>C#</h2>
+      <p><span class="titulo2">Creador:</span> Microsoft</p>
+    </div>
+
+    <div class="noStyle">
+      <h2>Resúmen de los lenguajes de programación</h2>
+      <a href="http://globalmentoring.com.mx" target="_blank"
+        >Visite globalmentoring.com.mx</a>
+    </div>
+  </body>
+</html>

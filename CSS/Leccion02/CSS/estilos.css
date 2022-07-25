@@ -1,0 +1,83 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1{
+    text-align: center;
+    color: darkcyan;
+}
+.red,.violet, .orange, .gray{
+    color: white;
+    margin-top: 20px;
+}
+.red{
+    background-color:darkred;
+    border: 10px groove;
+    border-color: crimson red brown darkred;
+    /* border-color: superior-derecha-inferior-izquierda */
+    /* border-style: groove */
+    /* borde con zurco */
+}
+.yellow{
+    background-color:gold;
+    border: 6px double rgb(221, 224, 1); /* Doble linea */
+    margin-top: 20px;
+    border-width: 5px 10px 7px 12px;
+    /* border-width: superior-derecha-inferior-izquierda 
+    thik = muy ancho
+    medium = medio
+    thin = delgado*/
+}
+.violet{
+    background-color:blueviolet;
+    border: 5px ridge purple; /* Borde con cresta */
+    border-width: 10px 5px; /* Borde : (top,bottom)-(right,left) */
+}
+.pink{
+    background-color:hotpink;
+    border: 4px dashed; /* Borde discontinuo */
+    margin-top: 20px;
+    border-width: 10px 7px 5px; /* Borde : (top)-(right,left)-(bottom) */
+    /* aplicando distinto tamaño de borde  */
+    border-color:rgba(202, 141, 199, 0.966) hsl(203, 39%, 44%);
+}
+.orange{
+    background-color:orangered;
+    border: 4px dotted orange; /* Borde punteado circular */
+}
+.green{
+    background-color: lime;
+    margin-top: 20px;
+    border: 6px inset rgb(46, 144, 209); 
+    /* borde con recuadro */
+}
+.blue{
+    background-color: turquoise;
+    border: 4px solid blue; /* Borde solido */
+    margin-top: 20px;
+}
+.brown{
+    background-color: chocolate;
+    border: 6px outset brown;
+    /* recuadro inverso a inset */
+}
+.gray{
+    background-color: gray;
+    border: none;
+}
+.mixto{
+    border-style:dotted groove dashed ridge ;
+    border-color: gold crimson green blue;
+    /* border-style: arriba derecha abajo izq*/
+}
+
+.radio{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: hsla(348, 83%, 47%, 0.486);
+    border: solid coral;
+    border-width: thick; 
+    /* thin, medium y thick */
+    border-radius: 15px 5px; /* Valores entre 0 - 20 */
+}
+
+
+

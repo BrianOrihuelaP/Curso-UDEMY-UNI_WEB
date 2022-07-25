@@ -1,0 +1,27 @@
+h1{
+    color:#63af25;
+}
+
+a:link{ /*Estado intrinseco del elemento*/
+    color: #fb8500;
+    text-decoration: none;
+}
+
+a:visited{ /*una vez visto el elemento*/
+    color: #66b6ca;
+}
+
+a:hover{ /*cuando pasamos por encima del elemento*/
+    color:#c77d38;
+    text-decoration: underline;
+}
+
+a:active{ /*Cuando damos clic al elemento*/
+    color: #023047;
+    text-decoration: underline;
+}
+
+img{
+    width: 150px;
+}
+

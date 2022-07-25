@@ -1,0 +1,93 @@
+ul{
+    list-style-type: none; 
+    /*Para quitar la animación a la lista*/
+    background-color: rgb(52, 106, 156);
+    /*Color de fondo del menu de nav*/
+    overflow: hidden;
+    /*CSS overflow especifica: si recortar contenido, 
+    dibujar barras de desplazamiento o mostrar el contenido excedente en un elemento a nivel de bloque.*/
+    /*En este caso se muestra el contenido independientemente sin afectar a los demás elementos*/
+    margin: 0;
+    padding: 0;
+    /*Se anula el margin y el padding para que quedé lo más pegado a la cabecera y así no exista ningun problema a futuro*/
+    /**/
+}
+
+body{
+    background: linear-gradient(#5291e2, #ffffff);
+}
+
+#TituloNav{
+    margin: 5px 20px;
+    padding: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color:rgb(124, 187, 189);
+    font-size: 20px;
+
+}
+
+li{
+    float: left; 
+    /*Float CSS ubica un elemento al lado izquierdo o derecho de su contenedor, 
+    permitiendo a los elementos de texto y en línea aparecer a su costado.*/
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: #1d3557;
+    color:#ff34f5;
+    text-shadow: #422222 0 -2px;
+}
+
+#titulo-principal{
+    color: #ffffff;
+    text-align: center;
+    margin: 15px;
+    margin-top: 20px;
+}
+
+h2{
+    color: #3f37c9;;
+}
+
+p{
+    color : #457b9d;
+}
+
+/*Clase del HTML*/
+.tarjeta{
+     border: 5px solid #560bad;
+        background-color: #f1faee;
+        text-align: center;
+        margin: 10px 140px;
+        padding: 10px;  
+}
+
+.titulo2{
+    color:#bb0d5b;
+
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:hover{ /*cuando pasamos por encima del elemento*/
+    color:#e4224c;
+    text-decoration: underline;
+}
+
+a:active{ /*Cuando damos clic al elemento*/
+    color: #000000;
+    text-decoration: underline;
+}
+
+
