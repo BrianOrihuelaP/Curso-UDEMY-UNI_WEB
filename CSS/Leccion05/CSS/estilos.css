@@ -1,0 +1,26 @@
+body{
+    /* background-color: black; */
+    color: cornsilk;
+    /* background-image: url("/UNI-HTML/CSS/Leccion05/img/boris.jpg"); */
+    font-family: 'Tangerine', serif;
+    font-size: 28px;
+    /* background-repeat: repeat-x; */
+    /* Para que solo se repita en el eje x */
+    /* background-repeat: repeat-y; */
+    /* para que solo se repita en el eje y */
+    /* background-repeat: no-repeat; */
+    /* para que nos e repita la imagen */
+    /* background-position: right top; */
+    /* con esta propiedad podemos posicionar la imagen como deseemos */
+    /* background-attachment: fixed; */
+    /* para que la imagen de fondo se mantenga fija al dezplazamiento*/
+     /* de esta manera podemos simplificar lo anterior ------------------------------------------------- */
+    background: black url(/UNI-HTML/CSS/Leccion05/img/boris.jpg) repeat-y top fixed;
+   
+}
+
+h1{
+    text-align: center;
+    /* height: 1000px; */ 
+    /* para comprobar el attachment */
+}

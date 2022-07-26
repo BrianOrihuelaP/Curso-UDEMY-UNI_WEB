@@ -1,0 +1,35 @@
+*{
+    font-family: 'Cormorant SC', serif;
+}
+
+h1{
+    text-align: center;
+    color: #ef476f;
+    background-color: beige;
+    text-shadow: 2px 4px 12px grey;
+    /* text-shadow: sombra-x sombra-y blur color */
+    letter-spacing: 5px;
+    word-spacing: 2px;
+    text-decoration: overline underline;
+}
+
+p{
+    font-size: 18px;
+    color: white;
+    text-align: justify;
+    /* text-decoration: line-through; */
+    text-indent: 30px;
+    line-height: 1.5;
+    /* white-space: nowrap; */
+    /* no envuelve el texto en el contenedor */
+    text-shadow: 8px 4px 4px rgb(190, 177, 177);
+}
+
+.caja{
+    padding: 10px;
+    margin:auto;
+    border-radius: 5px;
+    background-color: rgb(165, 15, 157);
+    width: 50%;
+    direction: ltr;
+}
