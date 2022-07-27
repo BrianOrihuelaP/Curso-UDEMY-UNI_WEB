@@ -1,24 +1,37 @@
+ /* importando la fuente de google font */
+/* @import url('https://fonts.googleapis.com/css2?family=Sofia&family=Raleway:ital,wght@0,700;1,300&display=swap'); */
+/* version 2 de google fonts */
+
+/* @import url('https://fonts.googleapis.com/css?family=Raleway:ital,wght@0,700;1,300&effect=shadow-multiple&display=swap'); */
+/* efecto shadow multiple */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:ital,wght@0,700;1,300&effect=fire-animation&display=swap');
+
 body {
-    background: black url("https://images6.alphacoders.com/316/316841.jpg") repeat-y fixed;
+    background: black url("https://images7.alphacoders.com/316/thumb-1920-316707.jpg") repeat-y top fixed;
 }
 
 .caja {
     float: left;
     width: 45%;
     height: 80px;
-    padding: 5px;
+    padding: 4px;
     border-radius: 8px;
     text-align: center;
     margin: 10px;
     font-size: 20px;
+    box-shadow: 8px 15px 5px rgb(8, 8, 8);
+    color: aliceblue;
 }
 
 h1 {
     text-align: center;
     letter-spacing: 4px;
-    text-shadow: 4px 4px 2px white;
+    /* text-shadow: 8px 3px 5px rgb(180, 126, 126); */
     text-decoration: underline overline;
-    font-size: 48px;
+    /* font-size: 48px; */
+    font: italic small-caps 700 48px 'Raleway', sans-serif;
+    /* de esta manera podemso escribir varias propiedades en una sola linea con Font */
 }
 
 .caja.serif {
@@ -27,14 +40,22 @@ h1 {
 
 .fuente_times {
     font-family: 'Times New Roman', Times, serif;
+    /* font-style: italic; */
+    /* tipos de estilos con fuentes, cursiva, negritas, etc */
+    font-variant: small-caps;
+    /* Aplica upercase pero las primeras letras aplica mas altura */
 }
 
 .fuente_georgia {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-weight: bold;
+    /* controla la anchura de la fuente */
 }
 
 .caja.sans-serif {
     background-color: rgb(196, 154, 38);
+    /* controla el tamaño de la fuente */
 }
 
 .fuente_arial {
@@ -51,6 +72,9 @@ h1 {
 
 .fuente_courier {
     font-family: 'Courier New', Courier, monospace;
+    /* font-size: 1.2em;
+    1 em == 16px */
+    font-size: 1.6vw;
 }
 
 .caja.cursiva {
@@ -59,4 +83,6 @@ h1 {
 
 .fuente_lucida {
     font-family: 'Lucida Handwriting', cursive;
+    font-size: 20px;
 }
+
