@@ -6,6 +6,7 @@
 /* efecto shadow multiple */
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:ital,wght@0,700;1,300&effect=fire-animation&display=swap');
+/* cargando efecto de google css v1 */
 
 body {
     background: black url("https://images7.alphacoders.com/316/thumb-1920-316707.jpg") repeat-y top fixed;
@@ -30,8 +31,8 @@ h1 {
     /* text-shadow: 8px 3px 5px rgb(180, 126, 126); */
     text-decoration: underline overline;
     /* font-size: 48px; */
-    font: italic small-caps 700 48px 'Raleway', sans-serif;
-    /* de esta manera podemso escribir varias propiedades en una sola linea con Font */
+    font: italic small-caps 700 48px 'anaglyph', sans-serif;
+    /* de esta manera podemos escribir varias propiedades en una sola linea con Font, aqui inclui fuente google */
 }
 
 .caja.serif {
@@ -75,6 +76,7 @@ h1 {
     /* font-size: 1.2em;
     1 em == 16px */
     font-size: 1.6vw;
+    /* view width, se ajusta al tamaño de pantalla tipo responsive */
 }
 
 .caja.cursiva {

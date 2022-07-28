@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Rancho&effect=anaglyph');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Raleway:ital,wght@0,700;1,300&display=swap');
+
+body {
+    background: black url("https://www.pixel4k.com/wp-content/uploads/2021/03/dragon-training-4k_1614620365.jpg") repeat-y top fixed;
+    background-size: cover;
+    /* para ajustar la imagen a la pantalla */
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font: italic small-caps 700 48px 'Raleway', sans-serif;
+}
+
+div {
+    padding: 14px;
+    margin: 16px auto;
+    width: 360px;
+    min-width: 100px;
+    text-align: center;
+    box-shadow: 5px 8px 8px white;
+}
+
+i {
+    vertical-align: baseline;
+}
+
+.caja {
+    background-color: rgba(146, 41, 207, 0.637);
+}
+
+.caja2 {
+    background-color: rgba(90, 15, 133, 0.63);
+}
+
+.caja3 {
+    background-color: rgba(29, 45, 192, 0.63);
+}
+
+.caja4 {
+    background-color: rgba(192, 29, 178, 0.63);
+}
+
+.caja5 {
+    background-color: rgba(192, 29, 83, 0.63);
+}
+
+p {
+    font-size: 20px;
+    color: azure;
+    font-family: 'Merienda', cursive;
+}
+
+.icono_rojo {
+    font-size: 2em;
+    color: rgb(170, 29, 29);
+}
+
+.icono_black {
+    font-size: 2em;
+    color: rgb(39, 148, 211);
+}
+
+.icono_gold {
+    font-size: 2em;
+    color: gold;
+}
+
+div:hover{
+    width: 366px;
+    box-shadow: 8px 5px 8px rgb(26, 25, 25);
+}
