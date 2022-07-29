@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade&effect=neon&display=swap');
+
+body{
+    background: black url('https://cdn.wallpapersafari.com/38/13/sQtEFD.png') ;
+    color: white;
+}
+h1{
+    font-family: 'Bungee Shade', cursive;
+    text-align: center;
+    color: black;
+}
+
+div{
+    /* max-width: 500px; */
+    width: 50%;
+    border: 3px solid mistyrose;
+    position:fixed;
+    top: 100px;
+    left: 100px;
+}

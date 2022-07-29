@@ -1,0 +1,27 @@
+h1, p, div{
+    border: 3px solid rgb(128, 7, 128);
+    text-align: center;
+    color: cornflowerblue;
+    padding: 10px;
+    display: block;
+}
+
+div{
+    /* display: none; */
+    /* Para ocultar algun elemento */
+    visibility: hidden;
+    /* se oculta pero se reserva el espacio */
+}
+
+span{
+    display: block;
+}
+
+a{
+    display: block;
+    text-align: right;
+}
+
+li{
+    display: inline;
+}
